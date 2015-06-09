@@ -7,7 +7,17 @@ something similar, like [WebPacker](http://webpack.github.io/).
 
 ## Example, explanation
 ```js
+var lock = require('z-lock');
+var a_lock = new lock();
 
+a_lock.isLocked(); // returns false
+
+// Let the examples tell the story
+a_lock.lock();
+a_lock.isLocked(); // returns true
+
+a_lock.unLock();
+a_lock.isLocked(); // returns false
 ```
 
 ## License
