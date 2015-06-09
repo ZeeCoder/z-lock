@@ -20,5 +20,6 @@ a_lock.unLock();
 a_lock.isLocked(); // returns false
 ```
 
+
 ## License
 [MIT](LICENSE)
